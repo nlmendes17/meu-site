@@ -3,49 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>NM Sites - Desenvolvimento Web</title>
+  <title>NM Sites</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Menu Fixo -->
-<nav class="navbar">
-  <div class="logo">
-    <img src="images/logo.png" alt="NM Sites" class="logo-img">
-  </div>
-  <ul class="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#projetos">Projetos</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</nav>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="NM Sites" class="logo-img">
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
 
-<!-- Hero -->
-<section class="hero" id="home">
-  <div class="overlay"></div>
-  <img src="images/logo.png" alt="NM Sites" class="hero-logo">
-  <h1 class="hero-title">NM Sites</h1>
-  <p class="hero-subtitle">Criamos sites modernos e funcionais</p>
-  <a href="#projetos" class="btn">Explorar Projetos</a>
-  <canvas id="particles"></canvas>
-</section>
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <canvas id="particles"></canvas>
+    <div class="overlay"></div>
+    <img src="images/logo.png" alt="NM Sites" class="hero-logo">
+    <h1 class="hero-title">NM Sites</h1>
+    <p class="hero-subtitle">Criamos sites modernos, tecnológicos e profissionais</p>
+    <a href="#projetos" class="btn">Ver Projetos</a>
+  </section>
 
   <!-- Serviços -->
   <section id="servicos">
-    <h2>Serviços</h2>
+    <h2>Nossos Serviços</h2>
     <div class="cards">
       <div class="card">
-        <h3>Criação de Sites</h3>
-        <p>Desenvolvemos sites modernos, responsivos e funcionais.</p>
+        <img src="images/logo.png" alt="">
+        <h3>Desenvolvimento Web</h3>
+        <p>Sites modernos, responsivos e rápidos.</p>
       </div>
       <div class="card">
-        <h3>Manutenção</h3>
-        <p>Atualizamos e corrigimos sites existentes para performance máxima.</p>
+        <img src="images/logo.png" alt="">
+        <h3>Design Profissional</h3>
+        <p>Layouts elegantes e de fácil navegação.</p>
       </div>
       <div class="card">
-        <h3>Consultoria</h3>
-        <p>Orientação completa para sua presença digital ser profissional.</p>
+        <img src="images/logo.png" alt="">
+        <h3>Tecnologia Avançada</h3>
+        <p>Integração com ferramentas modernas e seguras.</p>
       </div>
     </div>
   </section>
@@ -55,19 +58,19 @@
     <h2>Projetos Recentes</h2>
     <div class="cards">
       <div class="card">
-        <img src="images/projeto1.jpg" alt="Projeto 1">
+        <img src="images/logo.png" alt="">
         <h3>Projeto 1</h3>
-        <a href="#" class="btn small">Ver projeto</a>
+        <p>Descrição do projeto 1.</p>
       </div>
       <div class="card">
-        <img src="images/projeto2.jpg" alt="Projeto 2">
+        <img src="images/logo.png" alt="">
         <h3>Projeto 2</h3>
-        <a href="#" class="btn small">Ver projeto</a>
+        <p>Descrição do projeto 2.</p>
       </div>
       <div class="card">
-        <img src="images/projeto3.jpg" alt="Projeto 3">
+        <img src="images/logo.png" alt="">
         <h3>Projeto 3</h3>
-        <a href="#" class="btn small">Ver projeto</a>
+        <p>Descrição do projeto 3.</p>
       </div>
     </div>
   </section>
@@ -75,13 +78,12 @@
   <!-- Contato -->
   <section id="contato">
     <h2>Contato</h2>
-    <p>WhatsApp: <a href="https://wa.me/SEU_NUMERO">Clique aqui</a></p>
-    <p>Email: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+    <p>Fale com a gente: <a href="mailto:contato@nmsites.com" class="btn">contato@nmsites.com</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 NM Sites - Todos os direitos reservados</p>
+    &copy; 2025 NM Sites. Todos os direitos reservados.
   </footer>
 
   <script src="script.js"></script>
