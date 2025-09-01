@@ -1,79 +1,54 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nathan - Desenvolvedor Web</title>
+  <title>Meu Site Moderno</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
   <!-- Hero -->
-  <header>
-    <div class="hero-content">
-      <h1>Oi, eu sou Nathan</h1>
-      <p>Eu crio sites modernos e funcionais</p>
-      <a href="https://wa.me/SEU_NUMERO" class="btn">Me chamar no WhatsApp</a>
-    </div>
-  </header>
-
-  <!-- Serviços -->
-  <section id="servicos">
-    <h2>Serviços</h2>
-    <div class="cards">
-      <div class="card">Criação de Sites</div>
-      <div class="card">Manutenção de Sites</div>
-      <div class="card">Consultoria Web</div>
-    </div>
+  <section class="hero">
+    <div class="overlay"></div>
+    <h1 class="hero-title">Bem-vindo ao Futuro</h1>
+    <p class="hero-subtitle">Um site moderno, bonito e responsivo</p>
+    <a href="#projetos" class="btn">Explorar</a>
+    <canvas id="particles"></canvas>
   </section>
 
-  <!-- Portfolio -->
-  <section id="portfolio">
-    <h2>Projetos</h2>
-    <div class="cards">
+  <!-- Projetos -->
+  <section id="projetos" class="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="grid">
       <div class="card">
-        <img src="images/projeto1.jpg" alt="Projeto 1">
-        <h3>Projeto 1</h3>
-        <a href="#">Ver site</a>
+        <div class="card-content">
+          <h3>Projeto 1</h3>
+          <p>Descrição rápida do projeto</p>
+          <a href="#" class="btn small">Ver projeto</a>
+        </div>
       </div>
       <div class="card">
-        <img src="images/projeto2.jpg" alt="Projeto 2">
-        <h3>Projeto 2</h3>
-        <a href="#">Ver site</a>
+        <div class="card-content">
+          <h3>Projeto 2</h3>
+          <p>Descrição rápida do projeto</p>
+          <a href="#" class="btn small">Ver projeto</a>
+        </div>
       </div>
       <div class="card">
-        <img src="images/projeto3.jpg" alt="Projeto 3">
-        <h3>Projeto 3</h3>
-        <a href="#">Ver site</a>
+        <div class="card-content">
+          <h3>Projeto 3</h3>
+          <p>Descrição rápida do projeto</p>
+          <a href="#" class="btn small">Ver projeto</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Contato -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>WhatsApp: <a href="https://wa.me/SEU_NUMERO">Clique aqui</a></p>
-    <p>Email: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
-  </section>
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 - Criado por Nathan</p>
+  </footer>
 
-  <script>
-    // Fade-in ao rolar a página
-    const faders = document.querySelectorAll('.card, section h2, section p');
-    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
-      entries.forEach(entry => {
-        if(!entry.isIntersecting) return;
-        entry.target.classList.add('appear');
-        appearOnScroll.unobserve(entry.target);
-      });
-    }, appearOptions);
-
-    faders.forEach(fader => {
-      appearOnScroll.observe(fader);
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>
