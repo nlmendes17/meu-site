@@ -1,4 +1,4 @@
-// Partículas
+// Partículas interativas
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 let particlesArray = [];
@@ -17,13 +17,29 @@ class Particle {
   }
 }
 
-function initParticles(){ particlesArray=[]; for(let i=0;i<100;i++){ let size=Math.random()*3+1; let x=Math.random()*canvas.width; let y=Math.random()*canvas.height; let dx=(Math.random()-0.5)*1.5; let dy=(Math.random()-0.5)*1.5; particlesArray.push(new Particle(x,y,dx,dy,size)); } }
-function animateParticles(){ requestAnimationFrame(animateParticles); ctx.clearRect(0,0,canvas.width,canvas.height); particlesArray.forEach(p=>p.update()); }
-initParticles(); animateParticles();
+// Inicializa partículas
+function initParticles(){
+  particlesArray=[];
+  for(let i=0;i<120;i++){
+    let size=Math.random()*3+1;
+    let x=Math.random()*canvas.width;
+    let y=Math.random()*canvas.height;
+    let dx=(Math.random()-0.5)*1.5;
+    let dy=(Math.random()-0.5)*1.5;
+    particlesArray.push(new Particle(x,y,dx,dy,size));
+  }
+}
 
-// Scroll Fade-in
+function animateParticles(){ requestAnimationFrame(animateParticles); ctx.clearRect(0,0,canvas.width,canvas.height); particlesArray.forEach(p=>p.update()); }
+
+initParticles();
+animateParticles();
+
+// Efeito fade-in ao scroll
 const fadeElements = document.querySelectorAll('.impact-section, .cards, section h2');
 const observer = new IntersectionObserver((entries)=>{
-  entries.forEach(entry=>{ if(entry.isIntersecting){ entry.target.classList.add('fade-in'); } });
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){ entry.target.classList.add('fade-in'); }
+  });
 },{threshold:0.2});
 fadeElements.forEach(el=>observer.observe(el));

@@ -27,7 +27,7 @@ section h2 { font-size:2.5rem; margin-bottom:50px; text-shadow:1px 1px 5px rgba(
 
 /* Cards */
 .cards { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
-.card { background: rgba(255,255,255,0.05); border-radius:20px; overflow:hidden; transition: transform 0.3s, box-shadow 0.3s; padding:20px; }
+.card { background: rgba(255,255,255,0.05); border-radius:20px; backdrop-filter: blur(10px); transition: transform 0.3s, box-shadow 0.3s; padding:20px; }
 .card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 12px 25px rgba(106,17,203,0.8); }
 .card img { width:100%; border-radius:10px; margin-bottom:12px; }
 
@@ -50,3 +50,6 @@ footer { text-align:center; padding:20px; background:#111; font-size:0.9rem; }
 @keyframes gradientBG { 0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;} }
 @keyframes logoFloat { 0% { transform: translateY(0); } 100% { transform: translateY(-15px); } }
 @keyframes floatImage { 0% { transform: translateY(0); } 100% { transform: translateY(-15px); } }
+
+/* Responsivo */
+@media(max-width:900px){ .impact-content{flex-direction:column;}.navbar{padding:15px 20px;} .cards{flex-direction:column;gap:20px;} }
