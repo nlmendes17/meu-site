@@ -5,15 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nathan - Desenvolvedor Web</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Hero -->
   <header>
-    <h1>Oi, eu sou Nathan</h1>
-    <p>Eu crio sites modernos e funcionais</p>
-    <a href="https://wa.me/SEU_NUMERO" class="btn">Me chamar no WhatsApp</a>
+    <div class="hero-content">
+      <h1>Oi, eu sou Nathan</h1>
+      <p>Eu crio sites modernos e funcionais</p>
+      <a href="https://wa.me/SEU_NUMERO" class="btn">Me chamar no WhatsApp</a>
+    </div>
   </header>
 
   <!-- Serviços -->
@@ -54,6 +56,24 @@
     <p>WhatsApp: <a href="https://wa.me/SEU_NUMERO">Clique aqui</a></p>
     <p>Email: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
   </section>
+
+  <script>
+    // Fade-in ao rolar a página
+    const faders = document.querySelectorAll('.card, section h2, section p');
+    const appearOptions = { threshold: 0.2, rootMargin: "0px 0px -50px 0px" };
+
+    const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll){
+      entries.forEach(entry => {
+        if(!entry.isIntersecting) return;
+        entry.target.classList.add('appear');
+        appearOnScroll.unobserve(entry.target);
+      });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+      appearOnScroll.observe(fader);
+    });
+  </script>
 
 </body>
 </html>

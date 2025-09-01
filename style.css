@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -7,48 +7,49 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  line-height: 1.5;
-  background: linear-gradient(to bottom, #000000, #2c2c2c, #ffffff);
+  background: linear-gradient(to bottom, #0f0f0f, #2c2c2c);
   color: #f5f5f5;
+  scroll-behavior: smooth;
 }
 
 /* Hero */
 header {
   height: 100vh;
-  background: linear-gradient(135deg, #1a1a1a, #3c3c3c, #5c5c5c);
-  color: #ffffff;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  text-shadow: 0 2px 5px rgba(0,0,0,0.7);
+  background: linear-gradient(135deg, #000000, #3c3c3c, #555555);
+  position: relative;
+  overflow: hidden;
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   margin-bottom: 10px;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.8);
 }
 
 header p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.7);
 }
 
 .btn {
-  background-color: #6a11cb;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   color: white;
-  padding: 12px 25px;
+  padding: 15px 30px;
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
-  box-shadow: 0 4px 15px rgba(106,17,203,0.5);
   transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(106,17,203,0.5);
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(106,17,203,0.7);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(106,17,203,0.8);
 }
 
 /* Seções */
@@ -57,38 +58,55 @@ section {
   text-align: center;
 }
 
-h2 {
-  font-size: 2.5rem;
+section h2 {
+  font-size: 2.8rem;
   margin-bottom: 40px;
   color: #ffffff;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+section p {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out 0.2s;
 }
 
 /* Cards */
 .cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
 }
 
 .card {
   background-color: #1f1f1f;
-  padding: 20px;
+  padding: 25px;
   border-radius: 12px;
-  width: 220px;
+  width: 240px;
   font-weight: bold;
-  transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  transition: transform 0.4s, box-shadow 0.4s;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(106,17,203,0.7);
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 12px 30px rgba(106,17,203,0.8);
 }
 
 .card img {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+/* Aparecer com fade-in */
+.appear {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
 }
