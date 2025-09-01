@@ -3,50 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Site Moderno</title>
+  <title>NM Sites - Desenvolvimento Web</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- Menu Fixo -->
+  <nav class="navbar">
+    <div class="logo">NM Sites</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" id="home">
     <div class="overlay"></div>
-    <h1 class="hero-title">Bem-vindo ao Futuro</h1>
-    <p class="hero-subtitle">Um site moderno, bonito e responsivo</p>
-    <a href="#projetos" class="btn">Explorar</a>
+    <h1 class="hero-title">NM Sites</h1>
+    <p class="hero-subtitle">Criamos sites modernos e funcionais</p>
+    <a href="#projetos" class="btn">Explorar Projetos</a>
     <canvas id="particles"></canvas>
   </section>
 
-  <!-- Projetos -->
-  <section id="projetos" class="projetos">
-    <h2>Meus Projetos</h2>
-    <div class="grid">
+  <!-- Serviços -->
+  <section id="servicos">
+    <h2>Serviços</h2>
+    <div class="cards">
       <div class="card">
-        <div class="card-content">
-          <h3>Projeto 1</h3>
-          <p>Descrição rápida do projeto</p>
-          <a href="#" class="btn small">Ver projeto</a>
-        </div>
+        <h3>Criação de Sites</h3>
+        <p>Desenvolvemos sites modernos, responsivos e funcionais.</p>
       </div>
       <div class="card">
-        <div class="card-content">
-          <h3>Projeto 2</h3>
-          <p>Descrição rápida do projeto</p>
-          <a href="#" class="btn small">Ver projeto</a>
-        </div>
+        <h3>Manutenção</h3>
+        <p>Atualizamos e corrigimos sites existentes para performance máxima.</p>
       </div>
       <div class="card">
-        <div class="card-content">
-          <h3>Projeto 3</h3>
-          <p>Descrição rápida do projeto</p>
-          <a href="#" class="btn small">Ver projeto</a>
-        </div>
+        <h3>Consultoria</h3>
+        <p>Orientação completa para sua presença digital ser profissional.</p>
       </div>
     </div>
   </section>
 
+  <!-- Projetos -->
+  <section id="projetos">
+    <h2>Projetos Recentes</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="images/projeto1.jpg" alt="Projeto 1">
+        <h3>Projeto 1</h3>
+        <a href="#" class="btn small">Ver projeto</a>
+      </div>
+      <div class="card">
+        <img src="images/projeto2.jpg" alt="Projeto 2">
+        <h3>Projeto 2</h3>
+        <a href="#" class="btn small">Ver projeto</a>
+      </div>
+      <div class="card">
+        <img src="images/projeto3.jpg" alt="Projeto 3">
+        <h3>Projeto 3</h3>
+        <a href="#" class="btn small">Ver projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>WhatsApp: <a href="https://wa.me/SEU_NUMERO">Clique aqui</a></p>
+    <p>Email: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+  </section>
+
   <!-- Footer -->
   <footer>
-    <p>© 2025 - Criado por Nathan</p>
+    <p>© 2025 NM Sites - Todos os direitos reservados</p>
   </footer>
 
   <script src="script.js"></script>
