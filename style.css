@@ -20,7 +20,6 @@ body { font-family: 'Poppins', sans-serif; color:#fff; background: linear-gradie
 /* Botões */
 .btn { padding:12px 25px; background:linear-gradient(90deg,#6a11cb,#2575fc); border-radius:25px; color:#fff; text-decoration:none; font-weight:bold; transition:all 0.3s ease; box-shadow:0 0 10px rgba(37,117,252,0.5); }
 .btn:hover { transform:scale(1.1); box-shadow:0 0 25px rgba(106,17,203,0.7); }
-.btn.small { padding:8px 15px; font-size:0.9rem; }
 
 /* Seções */
 section { padding:100px 20px; text-align:center; scroll-margin-top:80px; }
@@ -28,4 +27,26 @@ section h2 { font-size:2.5rem; margin-bottom:50px; text-shadow:1px 1px 5px rgba(
 
 /* Cards */
 .cards { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
-.card { background: rgba(255,255,255,0.05); border-radius:20px; overflow:hidden; tr
+.card { background: rgba(255,255,255,0.05); border-radius:20px; overflow:hidden; transition: transform 0.3s, box-shadow 0.3s; padding:20px; }
+.card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 12px 25px rgba(106,17,203,0.8); }
+.card img { width:100%; border-radius:10px; margin-bottom:12px; }
+
+/* Footer */
+footer { text-align:center; padding:20px; background:#111; font-size:0.9rem; }
+
+/* Seção Impacto */
+.impact-section { position: relative; padding: 100px 20px; display:flex; justify-content:center; align-items:center; background: rgba(20,20,20,0.8); text-align:left; overflow:hidden; }
+.impact-content { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:50px; max-width:1200px; }
+.impact-image img { max-width:400px; width:100%; border-radius:15px; box-shadow:0 12px 25px rgba(106,17,203,0.6); animation: floatImage 3s ease-in-out infinite alternate; }
+.impact-text { max-width:600px; color:#fff; }
+.impact-text h2 { font-size:2.5rem; margin-bottom:20px; text-shadow:1px 1px 5px rgba(0,0,0,0.6); }
+.impact-text p { font-size:1.3rem; margin-bottom:30px; }
+
+/* Fade-in */
+.fade-in { opacity:1 !important; transform: translateY(0) !important; transition: all 1s ease-out; }
+.impact-section, .cards, section h2 { opacity:0; transform: translateY(50px); }
+
+/* Animações */
+@keyframes gradientBG { 0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;} }
+@keyframes logoFloat { 0% { transform: translateY(0); } 100% { transform: translateY(-15px); } }
+@keyframes floatImage { 0% { transform: translateY(0); } 100% { transform: translateY(-15px); } }
