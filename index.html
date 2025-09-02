@@ -8,24 +8,31 @@
 </head>
 <body>
 
-  <!-- Cortina -->
-  <div id="curtain" class="curtain">
-    <div class="curtain-left"></div>
-    <div class="curtain-right"></div>
+  <!-- Cortina inicial -->
+  <div id="curtain">
+    <button id="openSiteBtn" class="btn">Quero fazer minha empresa crescer</button>
   </div>
-
-  <!-- Hero / Tela Inicial -->
-  <section class="hero" id="home">
-    <canvas id="particles"></canvas>
-    <div class="overlay"></div>
-    <img src="images/logo.png" alt="NM Sites" class="hero-logo">
-    <h1 class="hero-title">NM Sites</h1>
-    <p class="hero-subtitle">Criamos sites modernos, tecnológicos e profissionais</p>
-    <a href="#" id="openSiteBtn" class="btn">Quero fazer minha empresa crescer</a>
-  </section>
 
   <!-- Conteúdo do site -->
   <div id="siteContent" class="hidden">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="images/logo.png" alt="NM Sites" class="logo-img">
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <canvas id="particles"></canvas>
+      <div class="overlay"></div>
+      <img src="images/logo.png" alt="NM Sites" class="hero-logo">
+      <h1 class="hero-title">NM Sites</h1>
+      <p class="hero-subtitle">Criamos sites modernos, tecnológicos e profissionais</p>
+      <a href="#projetos" class="btn">Ver Projetos</a>
+    </section>
+
     <!-- Seção de Impacto -->
     <section id="impacto" class="impact-section">
       <div class="impact-content">
@@ -96,6 +103,7 @@
     <footer>
       &copy; 2025 NM Sites. Todos os direitos reservados.
     </footer>
+
   </div>
 
   <script src="script.js"></script>
