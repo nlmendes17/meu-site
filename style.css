@@ -25,8 +25,21 @@ body {
 #particles { position:absolute; top:0; left:0; width:100%; height:100%; z-index:0; }
 
 /* Botões */
-.btn { padding:12px 25px; background:linear-gradient(90deg,#6a11cb,#2575fc); border-radius:25px; color:#fff; text-decoration:none; font-weight:bold; transition:all 0.3s ease; box-shadow:0 0 10px rgba(37,117,252,0.5); }
-.btn:hover { transform:scale(1.1); box-shadow:0 0 25px rgba(106,17,203,0.7); }
+.btn { 
+  padding:12px 25px; 
+  background: linear-gradient(90deg, #00ff80, #000000); /* Verde para preto */
+  border-radius:25px; 
+  color:#fff; 
+  text-decoration:none; 
+  font-weight:bold; 
+  transition: all 0.3s ease; 
+  box-shadow:0 0 10px rgba(0,255,128,0.5); 
+}
+
+.btn:hover { 
+  transform: scale(1.1); 
+  box-shadow: 0 0 25px rgba(0,255,128,0.7); 
+}
 
 /* Seções */
 section { padding:100px 20px; text-align:center; scroll-margin-top:80px; }
