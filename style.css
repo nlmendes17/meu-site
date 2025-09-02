@@ -1,6 +1,13 @@
 /* Reset */
 * { margin:0; padding:0; box-sizing:border-box; }
-body { font-family: 'Poppins', sans-serif; color:#fff; background: linear-gradient(-45deg,#0f0f0f,#111,#222,#333); background-size:400% 400%; animation: gradientBG 12s ease infinite; scroll-behavior:smooth; }
+body { 
+  font-family: 'Poppins', sans-serif; 
+  color:#fff; 
+  background: linear-gradient(-45deg, #0f3d0f, #1a5c1a, #2575fc, #3399ff); 
+  background-size:400% 400%; 
+  animation: gradientBG 12s ease infinite; 
+  scroll-behavior:smooth; 
+}
 
 /* Navbar */
 .navbar { position:fixed; top:0; left:0; width:100%; display:flex; justify-content:space-between; align-items:center; padding:15px 50px; background:rgba(0,0,0,0.7); backdrop-filter: blur(5px); z-index:10; }

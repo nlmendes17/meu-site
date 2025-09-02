@@ -9,7 +9,7 @@ window.addEventListener('resize', () => { canvas.width = window.innerWidth; canv
 
 class Particle {
   constructor(x,y,dx,dy,size){ this.x=x; this.y=y; this.directionX=dx; this.directionY=dy; this.size=size; }
-  draw(){ ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fillStyle='rgba(106,17,203,0.7)'; ctx.fill(); }
+  draw(){ ctx.beginPath(); ctx.arc(this.x,this.y,this.size,0,Math.PI*2); ctx.fillStyle = Math.random() > 0.5 ? 'rgba(0,255,128,0.7)' : 'rgba(37,117,252,0.7)'; ctx.fill(); }
   update(){
     if(this.x+this.size>canvas.width||this.x-this.size<0) this.directionX*=-1;
     if(this.y+this.size>canvas.height||this.y-this.size<0) this.directionY*=-1;
