@@ -8,93 +8,95 @@
 </head>
 <body>
 
-  <!-- Navbar simplificada -->
-  <nav class="navbar">
-    <div class="logo">
-      <img src="images/logo.png" alt="NM Sites" class="logo-img">
-    </div>
-  </nav>
+  <!-- Cortina -->
+  <div id="curtain" class="curtain">
+    <div class="curtain-left"></div>
+    <div class="curtain-right"></div>
+  </div>
 
-  <!-- Hero -->
+  <!-- Hero / Tela Inicial -->
   <section class="hero" id="home">
     <canvas id="particles"></canvas>
     <div class="overlay"></div>
     <img src="images/logo.png" alt="NM Sites" class="hero-logo">
     <h1 class="hero-title">NM Sites</h1>
     <p class="hero-subtitle">Criamos sites modernos, tecnológicos e profissionais</p>
-    <a href="#projetos" class="btn">Ver Projetos</a>
+    <a href="#" id="openSiteBtn" class="btn">Quero fazer minha empresa crescer</a>
   </section>
 
-  <!-- Seção de Impacto -->
-  <section id="impacto" class="impact-section">
-    <div class="impact-content">
-      <div class="impact-image">
-        <img src="images/rendimento.png" alt="Crescimento de empresa">
+  <!-- Conteúdo do site -->
+  <div id="siteContent" class="hidden">
+    <!-- Seção de Impacto -->
+    <section id="impacto" class="impact-section">
+      <div class="impact-content">
+        <div class="impact-image">
+          <img src="images/rendimento.png" alt="Crescimento de empresa">
+        </div>
+        <div class="impact-text">
+          <h2>Aumente a visibilidade da sua empresa e domine o mercado digital</h2>
+          <p>
+            Não perca mais clientes para a concorrência. Com um site moderno, rápido, responsivo e totalmente personalizado para o seu negócio, você transforma visitantes em clientes fiéis, aumenta sua autoridade online e expande suas vendas. Chegou a hora de levar sua empresa para o próximo nível com presença digital profissional.
+          </p>
+          <a href="#contato" class="btn">Vamos Construir Juntos?</a>
+        </div>
       </div>
-      <div class="impact-text">
-        <h2>Aumente a visibilidade da sua empresa e domine o mercado digital</h2>
-        <p>
-          Não perca mais clientes para a concorrência. Com um site moderno, rápido, responsivo e totalmente personalizado para o seu negócio, você transforma visitantes em clientes fiéis, aumenta sua autoridade online e expande suas vendas. Chegou a hora de levar sua empresa para o próximo nível com presença digital profissional.
-        </p>
-        <a href="#contato" class="btn">Vamos Construir Juntos?</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Serviços -->
-  <section id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="images/logo.png" alt="">
-        <h3>Desenvolvimento Web</h3>
-        <p>Sites rápidos, responsivos e modernos.</p>
+    <!-- Serviços -->
+    <section id="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/logo.png" alt="">
+          <h3>Desenvolvimento Web</h3>
+          <p>Sites rápidos, responsivos e modernos.</p>
+        </div>
+        <div class="card">
+          <img src="images/logo.png" alt="">
+          <h3>Design Profissional</h3>
+          <p>Layouts elegantes e fáceis de navegar.</p>
+        </div>
+        <div class="card">
+          <img src="images/logo.png" alt="">
+          <h3>Tecnologia Avançada</h3>
+          <p>Integração com ferramentas modernas e seguras.</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="images/logo.png" alt="">
-        <h3>Design Profissional</h3>
-        <p>Layouts elegantes e fáceis de navegar.</p>
-      </div>
-      <div class="card">
-        <img src="images/logo.png" alt="">
-        <h3>Tecnologia Avançada</h3>
-        <p>Integração com ferramentas modernas e seguras.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Projetos -->
-  <section id="projetos">
-    <h2>Projetos Recentes</h2>
-    <div class="cards">
-      <div class="card">
-        <img src="images/logo.png" alt="">
-        <h3>Projeto 1</h3>
-        <p>Descrição do projeto 1.</p>
+    <!-- Projetos -->
+    <section id="projetos">
+      <h2>Projetos Recentes</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="images/logo.png" alt="">
+          <h3>Projeto 1</h3>
+          <p>Descrição do projeto 1.</p>
+        </div>
+        <div class="card">
+          <img src="images/logo.png" alt="">
+          <h3>Projeto 2</h3>
+          <p>Descrição do projeto 2.</p>
+        </div>
+        <div class="card">
+          <img src="images/logo.png" alt="">
+          <h3>Projeto 3</h3>
+          <p>Descrição do projeto 3.</p>
+        </div>
       </div>
-      <div class="card">
-        <img src="images/logo.png" alt="">
-        <h3>Projeto 2</h3>
-        <p>Descrição do projeto 2.</p>
-      </div>
-      <div class="card">
-        <img src="images/logo.png" alt="">
-        <h3>Projeto 3</h3>
-        <p>Descrição do projeto 3.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contato -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Fale com a gente: <a href="mailto:contato@nmsites.com" class="btn">contato@nmsites.com</a></p>
-  </section>
+    <!-- Contato -->
+    <section id="contato">
+      <h2>Contato</h2>
+      <p>Fale com a gente: <a href="mailto:contato@nmsites.com" class="btn">contato@nmsites.com</a></p>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 NM Sites. Todos os direitos reservados.
-  </footer>
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 NM Sites. Todos os direitos reservados.
+    </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
