@@ -30,7 +30,7 @@ body {
 /* Botões */
 .btn { 
   padding:12px 25px; 
-  background: linear-gradient(90deg,#00ff80,#2575fc); /* verde -> azul */
+  background: linear-gradient(90deg,#00ff80,#2575fc);
   border-radius:25px; 
   color:#fff; 
   text-decoration:none; 
@@ -42,16 +42,7 @@ body {
   transform:scale(1.1); 
   box-shadow:0 0 25px rgba(0,255,128,0.7); 
 }
-.btn.small { 
-  padding:8px 15px; 
-  font-size:0.9rem; 
-  background: linear-gradient(90deg,#00ff80,#2575fc);
-  box-shadow:0 0 10px rgba(37,117,252,0.5);
-}
-.btn.small:hover {
-  transform:scale(1.1);
-  box-shadow:0 0 25px rgba(0,255,128,0.7);
-}
+.btn.small { padding:8px 15px; font-size:0.9rem; }
 
 /* Seções */
 section { padding:100px 20px; text-align:center; scroll-margin-top:80px; }
@@ -59,40 +50,21 @@ section h2 { font-size:2.5rem; margin-bottom:50px; text-shadow:1px 1px 5px rgba(
 
 /* Cards */
 .cards { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
-.card { background: rgba(255,255,255,0.05); border-radius:20px; backdrop-filter: blur(10px); transition: transform 0.3s, box-shadow 0.3s; padding:20px; }
+.card { background: rgba(255,255,255,0.05); border-radius:20px; padding:20px; transition: transform 0.3s, box-shadow 0.3s; text-align:center; }
 .card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 12px 25px rgba(0,255,128,0.8); }
 .card img { width:100%; border-radius:10px; margin-bottom:12px; }
+.card h3, .card p { color:#fff; } /* garante que o texto apareça */
 
 /* Footer */
 footer { text-align:center; padding:20px; background:#111; font-size:0.9rem; }
 
 /* Seção Impacto */
-.impact-section { 
-  position: relative; 
-  padding: 100px 20px; 
-  display:flex; 
-  justify-content:center; 
-  align-items:center; 
-  text-align:left; 
-  overflow:hidden; 
-  opacity:0; 
-  transform: translateY(50px); 
-  transition: all 1s ease-out; 
-  background: rgba(255,255,255,0.05); 
-  border-radius: 20px; 
-  backdrop-filter: blur(10px); 
-}
-.impact-section.fade-in { opacity:1; transform: translateY(0); }
-.impact-content { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:50px; max-width:1200px; }
+.impact-section { display:flex; flex-wrap:wrap; justify-content:center; align-items:center; gap:50px; padding:80px 20px; }
 .impact-image img { max-width:400px; width:100%; border-radius:15px; box-shadow:0 12px 25px rgba(0,255,128,0.6); animation: floatImage 3s ease-in-out infinite alternate; }
 .impact-text { max-width:600px; color:#fff; }
-.impact-text h2 { font-size:2.5rem; margin-bottom:20px; text-shadow:1px 1px 5px rgba(0,0,0,0.6); }
-.impact-text p { font-size:1.3rem; margin-bottom:30px; }
-.impact-text .btn { padding:14px 30px; font-size:1.1rem; background:linear-gradient(90deg,#00ff80,#2575fc); box-shadow:0 0 15px rgba(0,255,128,0.7); }
-.impact-text .btn:hover { transform:scale(1.1); box-shadow:0 0 35px rgba(0,255,128,0.9); }
-
-/* Fade-in geral */
-.cards, section h2 { opacity:0; transform: translateY(50px); transition: all 1s ease-out; }
+.impact-text h2 { font-size:2rem; margin-bottom:20px; text-shadow:1px 1px 5px rgba(0,0,0,0.6); }
+.impact-text p { font-size:1.2rem; margin-bottom:30px; }
+.impact-text .btn { padding:14px 30px; font-size:1.1rem; }
 
 /* Animações */
 @keyframes gradientBG { 0% {background-position:0% 50%;} 50% {background-position:100% 50%;} 100% {background-position:0% 50%;} }
